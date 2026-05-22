@@ -1,0 +1,31 @@
+# ==========================================
+# PharmaGuide System - Production Dependencies
+# Target Environment: Python 3.13
+# Generated on: 2026-04-25
+# ==========================================
+
+# --- UI & Orchestration ---
+# Core framework for the web interface and session management
+chainlit==2.11.0
+
+# --- AI, LLM & RAG Framework ---
+# Orchestration and AI model integrations
+langchain-core==0.3.83
+langchain-google-genai==2.1.12
+langchain-voyageai==0.1.3
+langchain-chroma==0.2.6
+chromadb==1.5.7
+voyageai==0.3.7
+
+# --- Vision & QR Processing ---
+# Headless version is strictly required for server environments without a GUI
+# Note: Replaces opencv-python for production stability
+opencv-python-headless
+
+# --- Speech & Audio Processing ---
+# Azure Cognitive Services for robust Arabic speech-to-text
+azure-cognitiveservices-speech==1.49.1
+
+# --- Environment & Data Utilities ---
+# Handling .env files and environment variables
+python-dotenv==1.2.2
